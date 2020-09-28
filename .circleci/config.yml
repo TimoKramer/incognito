@@ -13,9 +13,9 @@ workflows:
       - tools/unittest:
           requires:
             - tools/setup
-      - tools/cljstest:
-          requires:
-            - tools/setup
+              #      - tools/cljstest:
+              #          requires:
+              #            - tools/setup
       - tools/build:
           jarname: "incognito"
           requires:
